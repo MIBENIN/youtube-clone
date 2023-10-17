@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 95%;
+    max-width: 1280px;
+    margin:0 auto;
+}
+button{
+    cursor: pointer;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width:7rem;
+}
+.search-div{
+    position: relative;
+}
+
+.search-field{
+    width:100%;
+    padding: .7em 1.5em;
+    border-radius:2em;
+    border:1px solid black;
+}
+.search-button{
+    position: absolute;
+    right:0;
+    top:50%;
+    transform: translateY(-50%);
+    padding: .4em 2em .4em 1em;
+    border: 1px solid blue;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+.menu-button{
+    border: none;
+    background: transparent;
+}
+.logo-div,
+.account-div{
+    display: flex;
+    align-items: center;
+    gap:1.5em;
+}
+.account-div{
+    justify-content: end;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.video-section{
+    margin: 1em 0;
+}
+iframe{
+    width: 100%;
+    height: 360px;
+}
+
+.video-user-action-div,
+.video-channel-div{
+    display: flex;
+    align-items: center;
+    gap:1.5em;
+    margin: .8em 0;
+}
+.video-user-action-div{
+    gap: .5em;
+}
+
+.channel-img-div{
+    width:3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border:2px solid black;
+}
+.channel-img{
+    max-width: 100%;
+}
+.channel-title{
+    font-size: 1rem;
+}
+.tick-mark{
+    width:16px;
+    height: 16px;
+}
+.channel-subscribers{
+    font-weight: 500;
+    font-size: .8rem;
+    color: gray;
+}
+.Subscribe-btn{
+    padding: 1em 3em;
+    border-radius: 2em;
+    border: 1px solid black;
+    font-weight: 600;
+}
+.action-button{
+    padding:.5em .8em;
+    border:1px solid black;
+    border-radius: 2em;
+    display: inline-block;
+}
+.action-button-img{
+    vertical-align: middle;
+    margin-right: .1em;
+}
+.video-details-body{
+    background-color: lightgrey;
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+.views,
+.trending-list,
+.posted-date{
+    font-weight: 600;
+    font-size: .8rem;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+.trending-list,
+.posted-date{
+    margin-left: 1em;
+}
+.trending-list{
+    color: gray;
+}
